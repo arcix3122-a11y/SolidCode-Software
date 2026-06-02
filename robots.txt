@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arcix3122-a11y.github.io/SolidCode-Software/sitemap.xml
