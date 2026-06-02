@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SolidCode Software – Mobile Apps</title>
+  <meta name="description" content="SolidCode Software builds clean, high-quality mobile applications for Android. Browse our apps and download them on Google Play." />
+  <meta name="keywords" content="SolidCode Software, Android apps, Google Play, mobile applications" />
+  <meta name="author" content="SolidCode Software" />
+  <link rel="canonical" href="https://arcix3122-a11y.github.io/SolidCode-Software/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SolidCode Software – Mobile Apps" />
+  <meta property="og:description" content="Clean, high-quality mobile applications for Android." />
+  <meta property="og:url" content="https://arcix3122-a11y.github.io/SolidCode-Software/" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: { DEFAULT: '#4f46e5', dark: '#4338ca' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SolidCode Software",
+    "url": "https://arcix3122-a11y.github.io/SolidCode-Software/",
+    "description": "Clean, high-quality mobile applications for Android."
+  }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- ── HEADER ── -->
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold tracking-tight text-brand">SolidCode Software</span>
+      <a
+        href="https://play.google.com/store/apps/developer?id=SolidCode+Software"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sm font-medium text-brand hover:underline"
+      >
+        View on Google Play ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="bg-white py-20 px-6 text-center">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+      SolidCode Software
+    </h1>
+    <p class="text-lg sm:text-xl text-gray-500 max-w-xl mx-auto">
+      Clean, purposeful Android apps — built to last.
+    </p>
+  </section>
+
+  <!-- ── APPS GRID ── -->
+  <main id="apps" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-8">Our Apps</h2>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!--
+        ══════════════════════════════════════════════
+        APP CARD TEMPLATE — copy and paste to add a new app.
+        Replace the values marked with [EDIT].
+        ══════════════════════════════════════════════
+      -->
+      <article class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col p-6">
+        <!-- App Icon [EDIT: replace src with your icon URL] -->
+        <img
+          src="https://placehold.co/72x72/4f46e5/ffffff?text=App"
+          alt="App icon"
+          width="72"
+          height="72"
+          class="rounded-2xl mb-4"
+          loading="lazy"
+        />
+        <!-- App Name [EDIT] -->
+        <h3 class="text-lg font-semibold text-gray-900 mb-1">App Name</h3>
+        <!-- Short Description [EDIT] -->
+        <p class="text-sm text-gray-500 flex-1 mb-5">
+          A short, compelling description of what this app does and why users will love it.
+        </p>
+        <!-- Google Play Link [EDIT: replace href with your Play Store URL] -->
+        <a
+          href="https://play.google.com/store/apps/details?id=com.example.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-medium rounded-xl px-4 py-2.5 transition-colors"
+        >
+          <!-- Google Play logo icon (inline SVG, no extra assets needed) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+            <path d="M3.18 23.76a2 2 0 0 0 2.07-.21l11.04-6.38-2.89-2.9-10.22 9.49ZM.5 1.34A2 2 0 0 0 0 2.67v18.67a2 2 0 0 0 .5 1.33L.62 22.8 12.38 11 .62 1.2.5 1.34ZM20.3 9.87 17.6 8.3 14.4 11l3.22 3.22 2.7-1.56a2 2 0 0 0 0-2.79ZM5.25.45A2 2 0 0 0 3.18.24L13.4 10.48l2.88-2.88L5.25.45Z"/>
+          </svg>
+          Download on Google Play
+        </a>
+      </article>
+      <!-- ── END OF APP CARD TEMPLATE ── -->
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="border-t border-gray-200 mt-8 py-8 text-center text-sm text-gray-400">
+    <p>&copy; <span id="year"></span> SolidCode Software. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
