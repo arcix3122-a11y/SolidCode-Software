@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>SolidCode Software – Mobile Apps for Android</title>
+  <meta name="description" content="SolidCode Software builds clean, high-quality Android applications. Browse our portfolio and download our apps on Google Play." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://arcix3122-a11y.github.io/SolidCode-Software/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arcix3122-a11y.github.io/SolidCode-Software/" />
+  <meta property="og:title" content="SolidCode Software – Mobile Apps for Android" />
+  <meta property="og:description" content="SolidCode Software builds clean, high-quality Android applications. Browse our portfolio and download our apps on Google Play." />
+  <!-- og:image — add a 1200×630 PNG named og-image.png to the repo root to enable rich social previews -->
+  <!-- <meta property="og:image" content="https://arcix3122-a11y.github.io/SolidCode-Software/og-image.png" /> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SolidCode Software – Mobile Apps for Android" />
+  <meta name="twitter:description" content="SolidCode Software builds clean, high-quality Android applications. Browse our portfolio and download our apps on Google Play." />
+  <!-- twitter:image — add og-image.png to the repo root to enable rich Twitter/X card previews -->
+  <!-- <meta name="twitter:image" content="https://arcix3122-a11y.github.io/SolidCode-Software/og-image.png" /> -->
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0f9ff',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Inline critical styles to avoid any flash of unstyled content -->
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Google Play badge colours */
+    .gplay-btn {
+      background-color: #000;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+    .gplay-btn:hover { background-color: #1a1a1a; }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <span class="text-lg font-bold tracking-tight text-white">SolidCode Software</span>
+      <nav aria-label="Main navigation">
+        <a href="#apps" class="text-sm text-slate-400 hover:text-white transition-colors">Apps</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="max-w-5xl mx-auto px-4 py-20 text-center">
+    <!-- Logo icon -->
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-500 mb-6" aria-hidden="true">
+      <svg class="w-9 h-9 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 15.75h3" />
+      </svg>
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+      SolidCode Software
+    </h1>
+    <p class="mt-4 text-lg sm:text-xl text-slate-400 max-w-xl mx-auto">
+      Clean, fast, and reliable Android apps — crafted with care.
+    </p>
+    <a href="#apps"
+       class="mt-8 inline-block bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+      Explore Apps
+    </a>
+  </section>
+
+  <!-- ===================== APPS GRID ===================== -->
+  <main id="apps">
+    <div class="max-w-5xl mx-auto px-4 pb-20">
+      <h2 class="text-2xl font-bold text-white mb-8">Our Apps</h2>
+
+      <!--
+        ╔══════════════════════════════════════════════════════════════╗
+        ║  To add a new app, copy one <article> block below and        ║
+        ║  update: icon SVG path, name, description, and the Play URL. ║
+        ╚══════════════════════════════════════════════════════════════╝
+      -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- ── APP CARD ── -->
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col gap-4 hover:border-slate-600 transition-colors">
+          <!-- App icon placeholder (replace SVG with an <img> if you have a real icon) -->
+          <div class="w-16 h-16 rounded-2xl bg-sky-500 flex items-center justify-center shrink-0" aria-hidden="true">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 14.93V17a1 1 0 11-2 0v-.07A8.001 8.001 0 014.07 9H5a1 1 0 010 2 6 6 0 006 6zm0-4a1 1 0 110-2 1 1 0 010 2z"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-white">App Name</h3>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              A short, punchy description of what this app does and the problem it solves.
+            </p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=YOUR.PACKAGE.NAME"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="gplay-btn self-start"
+             aria-label="Download App Name on Google Play">
+            <!-- Google Play icon -->
+            <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76a2 2 0 001.94-.21l11.7-6.76-2.8-2.8-10.84 9.77zM.8 1.01A2 2 0 000 2.6v18.8a2 2 0 00.8 1.59l.1.08 10.53-10.53v-.25L.9.93.8 1.01zm16.1 10.5L13.57 8.2l2.8-2.8 3.62 2.09c1.03.59 1.03 1.56 0 2.15l-3.09 1.87zM4.96.45L16.9 7.37l-2.8 2.8-10.14-9.1A2 2 0 004.96.45z"/>
+            </svg>
+            Google Play
+          </a>
+        </article>
+
+        <!-- ── APP CARD ── -->
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col gap-4 hover:border-slate-600 transition-colors">
+          <div class="w-16 h-16 rounded-2xl bg-violet-500 flex items-center justify-center shrink-0" aria-hidden="true">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-white">App Name</h3>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              A short, punchy description of what this app does and the problem it solves.
+            </p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=YOUR.PACKAGE.NAME"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="gplay-btn self-start"
+             aria-label="Download App Name on Google Play">
+            <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76a2 2 0 001.94-.21l11.7-6.76-2.8-2.8-10.84 9.77zM.8 1.01A2 2 0 000 2.6v18.8a2 2 0 00.8 1.59l.1.08 10.53-10.53v-.25L.9.93.8 1.01zm16.1 10.5L13.57 8.2l2.8-2.8 3.62 2.09c1.03.59 1.03 1.56 0 2.15l-3.09 1.87zM4.96.45L16.9 7.37l-2.8 2.8-10.14-9.1A2 2 0 004.96.45z"/>
+            </svg>
+            Google Play
+          </a>
+        </article>
+
+        <!-- ── APP CARD ── -->
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col gap-4 hover:border-slate-600 transition-colors">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-500 flex items-center justify-center shrink-0" aria-hidden="true">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+              <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a.11.11 0 00.091-.086L12 5.432z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg font-bold text-white">App Name</h3>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              A short, punchy description of what this app does and the problem it solves.
+            </p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=YOUR.PACKAGE.NAME"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="gplay-btn self-start"
+             aria-label="Download App Name on Google Play">
+            <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.18 23.76a2 2 0 001.94-.21l11.7-6.76-2.8-2.8-10.84 9.77zM.8 1.01A2 2 0 000 2.6v18.8a2 2 0 00.8 1.59l.1.08 10.53-10.53v-.25L.9.93.8 1.01zm16.1 10.5L13.57 8.2l2.8-2.8 3.62 2.09c1.03.59 1.03 1.56 0 2.15l-3.09 1.87zM4.96.45L16.9 7.37l-2.8 2.8-10.14-9.1A2 2 0 004.96.45z"/>
+            </svg>
+            Google Play
+          </a>
+        </article>
+
+      </div><!-- /grid -->
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <p>© <span id="yr"></span> SolidCode Software. All rights reserved.</p>
+      <nav aria-label="Footer navigation" class="flex gap-4">
+        <a href="mailto:contact@solidcodesoftware.com" class="hover:text-slate-300 transition-colors">Contact</a>
+        <!-- Add privacy.html to the repo root before enabling this link -->
+        <!-- <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a> -->
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Tiny inline script — sets the current year in the footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
