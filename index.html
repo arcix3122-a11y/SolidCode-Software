@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SolidCode Software | Android Apps & Google Play Portfolio</title>
-  <meta name="description" content="SolidCode Software creates fast, practical Android apps. Explore our Google Play portfolio, including Prawo Jazdy 180 AI, on a lightweight and mobile-first site." />
-  <meta name="keywords" content="SolidCode Software, Android apps, Google Play, mobile apps, app portfolio, Prawo Jazdy 180 AI" />
+  <title>SolidCode Software | Nowoczesne aplikacje mobilne na Androida</title>
+  <meta name="description" content="SolidCode Software tworzy nowoczesne aplikacje mobilne na Androida. Poznaj portfolio, odkryj Prawo Jazdy 180 AI i sprawdź rozwiązania zaprojektowane z myślą o wygodzie, szybkości i realnej wartości dla użytkownika." />
+  <meta name="keywords" content="SolidCode Software, aplikacje mobilne, Android, Google Play, Prawo Jazdy 180 AI, aplikacje na Androida, portfolio aplikacji" />
   <meta name="author" content="SolidCode Software" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0f172a" />
@@ -14,23 +14,53 @@
   <link rel="canonical" href="https://arcix3122-a11y.github.io/SolidCode-Software/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="SolidCode Software | Android Apps & Google Play Portfolio" />
-  <meta property="og:description" content="Discover Android apps from SolidCode Software, including Prawo Jazdy 180 AI, on a clean and fast GitHub Pages landing page." />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="SolidCode Software | Nowoczesne aplikacje mobilne na Androida" />
+  <meta property="og:description" content="Odkryj aplikacje mobilne SolidCode Software. Tworzymy szybkie, intuicyjne i dopracowane produkty na Androida, które rozwiązują realne problemy użytkowników." />
   <meta property="og:url" content="https://arcix3122-a11y.github.io/SolidCode-Software/" />
   <meta property="og:site_name" content="SolidCode Software" />
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="SolidCode Software | Android Apps & Google Play Portfolio" />
-  <meta name="twitter:description" content="Explore lightweight, practical Android apps from SolidCode Software, including Prawo Jazdy 180 AI." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SolidCode Software | Nowoczesne aplikacje mobilne na Androida" />
+  <meta name="twitter:description" content="Poznaj portfolio aplikacji SolidCode Software i sprawdź rozwiązania stworzone z myślą o skuteczności, prostocie i świetnym doświadczeniu użytkownika." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Prawo Jazdy 180 AI",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Android",
+    "creator": {
+      "@type": "Organization",
+      "name": "SolidCode Software"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SolidCode Software"
+    },
+    "description": "Aplikacja wspierająca przygotowanie do egzaminu na prawo jazdy dzięki nowoczesnemu i przejrzystemu doświadczeniu mobilnemu.",
+    "url": "https://arcix3122-a11y.github.io/SolidCode-Software/"
+  }
+  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          colors: {
+            brand: {
+              dark: "#0f172a",
+              blue: "#2563eb",
+              sky: "#0ea5e9",
+              soft: "#f8fafc",
+              line: "#e2e8f0"
+            }
+          },
           boxShadow: {
-            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+            premium: "0 20px 50px rgba(15, 23, 42, 0.10)",
+            card: "0 12px 30px rgba(15, 23, 42, 0.08)"
           }
         }
       }
@@ -40,119 +70,173 @@
   <style>
     html { scroll-behavior: smooth; }
     body { text-rendering: optimizeLegibility; }
-    .sr-only-focusable:not(:focus):not(:active) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+    .hero-gradient {
+      background:
+        radial-gradient(circle at top left, rgba(14,165,233,0.16), transparent 32%),
+        radial-gradient(circle at top right, rgba(37,99,235,0.14), transparent 30%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 56%, #ffffff 100%);
+    }
+    .glass-line {
+      background: linear-gradient(90deg, rgba(37,99,235,0.12), rgba(14,165,233,0.08));
     }
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased">
-  <a href="#main-content" class="sr-only-focusable left-4 top-4 z-50 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white focus:fixed">
-    Skip to content
-  </a>
-
-  <header class="border-b border-slate-200/80 bg-white">
+  <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur">
     <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <a href="/SolidCode-Software/" class="text-base font-semibold tracking-tight text-slate-900" aria-label="SolidCode Software homepage">
+      <a href="/SolidCode-Software/" class="text-base font-semibold tracking-tight text-slate-900" aria-label="SolidCode Software - strona główna">
         SolidCode Software
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#apps" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2">
-          Apps
+      <nav aria-label="Główna nawigacja">
+        <a href="#portfolio" class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
+          Portfolio
         </a>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <section class="border-b border-slate-200 bg-white">
+  <main>
+    <section class="hero-gradient overflow-hidden">
       <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
-        <div class="mx-auto max-w-3xl text-center">
-          <p class="mb-4 inline-flex rounded-full border border-slate-200 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-slate-600">
-            Android Software Studio
-          </p>
-          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            SolidCode Software
-          </h1>
-          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
-            Minimal, useful, and high-performance Android apps built to solve real problems quickly.
-          </p>
-          <div class="mt-10 flex items-center justify-center">
-            <a href="#apps" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2">
-              Browse apps on this page
-            </a>
+        <div class="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div>
+            <span class="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">
+              Nowoczesne aplikacje mobilne
+            </span>
+            <h1 class="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              Tworzymy aplikacje, które naprawdę rozwiązują problemy użytkowników.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+              SolidCode Software projektuje szybkie, intuicyjne i dopracowane aplikacje na Androida. Stawiamy na prostotę, wysoką użyteczność i doświadczenie, które przekłada się na realną wartość dla użytkownika końcowego.
+            </p>
+            <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+              <a href="#portfolio" class="inline-flex min-h-[52px] items-center justify-center rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-premium transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
+                Zobacz portfolio aplikacji
+              </a>
+              <a href="#kontakt" class="inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2">
+                Kontakt i współpraca
+              </a>
+            </div>
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-card">
+                <p class="text-2xl font-bold text-slate-900">Mobile-first</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Projektujemy tak, aby doświadczenie mobilne było szybkie, wygodne i czytelne od pierwszego ekranu.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-card">
+                <p class="text-2xl font-bold text-slate-900">Wysoka użyteczność</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Każdy interfejs podporządkowujemy prostocie działania i łatwości podejmowania decyzji przez użytkownika.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-card">
+                <p class="text-2xl font-bold text-slate-900">Realna wartość</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Budujemy produkty, które wspierają konkretne cele — naukę, produktywność i lepsze codzienne doświadczenia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-premium sm:p-8">
+              <div class="glass-line rounded-2xl p-[1px]">
+                <div class="rounded-2xl bg-white p-6">
+                  <div class="flex items-center gap-4">
+                    <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-700">
+                      <svg viewBox="0 0 64 64" class="h-8 w-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="10" y="14" width="44" height="36" rx="8" stroke="currentColor" stroke-width="3" />
+                        <path d="M20 26H44" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        <path d="M20 36H34" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Wyróżniona aplikacja</p>
+                      <h2 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">Prawo Jazdy 180 AI</h2>
+                    </div>
+                  </div>
+                  <p class="mt-6 text-base leading-7 text-slate-600">
+                    Nowoczesne wsparcie w przygotowaniu do egzaminu na prawo jazdy. Aplikacja została zaprojektowana tak, aby ułatwić naukę, skrócić drogę do wiedzy i zapewnić intuicyjne doświadczenie na urządzeniach mobilnych.
+                  </p>
+                  <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">Android</span>
+                    <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">AI-assisted</span>
+                    <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Edukacja</span>
+                  </div>
+                  <div class="mt-8">
+                    <a href="#portfolio" class="inline-flex min-h-[52px] w-full items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2">
+                      Przejdź do portfolio
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="apps" aria-labelledby="apps-heading" class="bg-slate-50/60">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div class="mb-10 max-w-2xl">
-          <h2 id="apps-heading" class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-            Android apps
+    <section id="portfolio" aria-labelledby="portfolio-heading" class="bg-white py-16 sm:py-20 lg:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Portfolio</p>
+          <h2 id="portfolio-heading" class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            Aplikacje stworzone z myślą o skuteczności i jakości doświadczenia
           </h2>
-          <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
-            This grid is intentionally simple so new apps can be added by copying a single card block and updating the icon, app name, description, and Google Play link.
+          <p class="mt-4 text-base leading-7 text-slate-600 sm:text-lg">
+            Każdy produkt w portfolio SolidCode Software powstaje z naciskiem na przejrzysty interfejs, wysoką szybkość działania i jasną wartość dla użytkownika.
           </p>
         </div>
 
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article id="prawo-jazdy-180-ai" aria-labelledby="app-prawo-title" class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-premium sm:p-7">
             <div class="flex items-start gap-4">
-              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-slate-100" aria-hidden="true">
-                <svg viewBox="0 0 64 64" class="h-9 w-9 text-slate-500" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-700">
+                <svg viewBox="0 0 64 64" class="h-8 w-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <rect x="10" y="14" width="44" height="36" rx="8" stroke="currentColor" stroke-width="3" />
                   <path d="M20 26H44" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                   <path d="M20 36H34" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                 </svg>
               </div>
               <div class="min-w-0">
-                <h3 id="app-prawo-title" class="text-lg font-semibold text-slate-900">
-                  Prawo Jazdy 180 AI
-                </h3>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  AI-assisted study support for driving licence preparation, presented in a clear and distraction-free mobile experience.
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">Prawo Jazdy 180 AI</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
+                  Inteligentne wsparcie dla osób przygotowujących się do egzaminu na prawo jazdy. Aplikacja łączy wygodę mobilnej nauki z przejrzystym doświadczeniem użytkownika i nowoczesnym podejściem do edukacji.
                 </p>
               </div>
             </div>
-            <div class="mt-6">
-              <!-- TODO: Replace # with the final Google Play URL for Prawo Jazdy 180 AI -->
-              <a href="#" class="inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2" aria-label="Google Play link placeholder for Prawo Jazdy 180 AI">
-                Google Play link coming soon
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">Android</span>
+              <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Edukacja</span>
+              <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">AI</span>
+            </div>
+            <div class="mt-8">
+              <!-- TODO: Podmień # na finalny link Google Play dla Prawo Jazdy 180 AI -->
+              <a href="#" class="inline-flex min-h-[52px] w-full items-center justify-center rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" aria-label="Link Google Play dla aplikacji Prawo Jazdy 180 AI - oczekuje na finalny adres">
+                Zobacz aplikację w Google Play
               </a>
             </div>
           </article>
 
-          <article aria-labelledby="app-template-title" class="flex h-full flex-col rounded-2xl border border-dashed border-slate-300 bg-white p-6 shadow-soft">
+          <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-card sm:p-7">
             <div class="flex items-start gap-4">
-              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-slate-100" aria-hidden="true">
-                <svg viewBox="0 0 64 64" class="h-9 w-9 text-slate-400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="12" y="12" width="40" height="40" rx="10" stroke="currentColor" stroke-width="3" stroke-dasharray="5 5" />
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white text-slate-500 shadow-sm">
+                <svg viewBox="0 0 64 64" class="h-8 w-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="12" y="12" width="40" height="40" rx="10" stroke="currentColor" stroke-width="3" />
                   <path d="M32 22V42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                   <path d="M22 32H42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                 </svg>
               </div>
-              <div class="min-w-0">
-                <h3 id="app-template-title" class="text-lg font-semibold text-slate-900">
-                  Add next app here
-                </h3>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  Duplicate this card to add another application. Update the icon, app name, app summary, and Google Play URL.
+              <div>
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">Kolejne produkty w przygotowaniu</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
+                  Portfolio SolidCode Software będzie rozwijane o kolejne aplikacje mobilne, zaprojektowane zgodnie z tym samym standardem jakości, prostoty i skuteczności działania.
                 </p>
               </div>
             </div>
-            <div class="mt-6">
-              <!-- TODO: Replace # with the final Google Play URL for the next app -->
-              <a href="#" class="inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2" aria-label="Placeholder Google Play link for the next app">
-                Add Google Play URL
+            <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-4">
+              <p class="text-sm leading-6 text-slate-600">
+                Jeśli chcesz obserwować rozwój nowych produktów lub nawiązać współpracę, skontaktuj się z nami i poznaj kierunek rozwoju kolejnych aplikacji.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a href="#kontakt" class="inline-flex min-h-[52px] w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2" aria-label="Przejdź do sekcji kontaktowej SolidCode Software">
+                Skontaktuj się z nami
               </a>
             </div>
           </article>
@@ -161,9 +245,27 @@
     </section>
   </main>
 
-  <footer class="border-t border-slate-200 bg-white">
-    <div class="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
-      © 2026 SolidCode Software. Built for GitHub Pages.
+  <footer id="kontakt" class="border-t border-slate-200 bg-slate-900 text-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-2 md:items-end">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">SolidCode Software</p>
+          <h2 class="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            Projektujemy aplikacje, które łączą funkcjonalność, prostotę i nowoczesną formę.
+          </h2>
+          <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
+            Jeśli interesuje Cię współpraca, rozwój produktu lub publikacja aplikacji mobilnych w najwyższym standardzie jakości, SolidCode Software jest gotowe do działania.
+          </p>
+        </div>
+        <div class="md:text-right">
+          <p class="text-sm text-slate-400">Kontakt i współpraca</p>
+          <p class="mt-2 text-lg font-semibold text-white">SolidCode Software</p>
+          <p class="mt-1 text-sm text-slate-300">Portfolio aplikacji mobilnych na Androida</p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-800 pt-6 text-sm text-slate-400">
+        © 2026 SolidCode Software. Wszelkie prawa zastrzeżone.
+      </div>
     </div>
   </footer>
 </body>
